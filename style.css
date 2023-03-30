@@ -1,0 +1,347 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.header{
+  height: 130vh;
+  width: 100%;
+  background-image: url(images/eth-purple.jpg);
+  background-size: 250%;
+  background-position: center;
+}
+
+.aboutme{
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content:  space-between;
+  align-items: center;
+}
+
+.nav-links{
+  flex:1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display:inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links ul li::after {
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #36f4eb;
+  display: block;
+  margin: auto;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.text-box {
+  width: 35%;
+  color:#fff;
+  position: relative;
+  top: 350px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-top: 5%;
+}
+
+.text-box h1 {
+  font-size: 50px;
+}
+
+.text-box p{
+  margin: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #a718c8;
+  border: 1px solid #a718c8;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #e0c4f0;
+  position: relative;
+  cursor: pointer; 
+}
+
+.hero-btn:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  transition: 1s;
+}
+
+nav .fa-solid{
+  display: none;
+}
+
+nav .fa{
+  display: none;
+}
+
+@media(max-width: 700px) {
+
+  .header {
+    background-position: top;
+    background-size: 300%;
+    height: 78vh;
+    padding-left: 10px;
+  }
+  .text-box{
+    top: 200px;
+    width: 70%;
+    transform: translate(-40%, -50%);
+  }
+  .text-box h1{
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background: #a718c8;
+    height: 100vh;
+    width: 120px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    padding-top: 20px;
+    transition: 1s;
+  }
+  .logo-head{
+    transform: translate(-60%);
+    max-width: 60px;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 5px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 5px;
+    text-align: left;
+  }
+}
+
+/* ---services--- */
+
+.services{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-image: url(images/services.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.columns {
+  display: flex;
+  margin: 40px 0;
+  
+}
+.column {
+  width: fit-content;
+}
+.service-box {
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  border-radius: 6px;
+  background: #fff;
+  width: 300px;
+  height: 200px;
+  color: #637bee;
+  margin: 40px;
+  transition: 0.5s;
+}
+.service-box:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+@media(max-width: 700px) {
+  .columns{
+    flex-direction: column;
+  }
+  .services{
+    padding-top: 10px;
+    height:100vh;
+  }
+  .service-box{
+    margin: 40px;
+  }
+}
+
+/* ---NFT--- */
+
+.NFT {
+  background-color:rgb(39,39,40);
+  height: 50vh;
+  text-align: center;
+  color: #fff;
+  padding: 100px;
+}
+.NFT-text-box {
+  width: 700px;
+  padding-left: 150px;
+}
+.NFT-text-box h1{
+  font-size: 32px;
+}
+.NFT-text-box a{
+  color: #fff;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 60px;
+}
+
+@media(max-width: 700px) {
+  .NFT {
+    padding-left: 15px;
+    height: 40vh;
+  }
+  .NFT-text-box {
+    padding-left: 0;
+    width: 350px;
+  }
+  .NFT-text-box h1{
+    font-size: 22px;
+  }
+  .NFT-text-box a{
+    font-size: 18px;
+  }
+}
+
+/* ---Clients--- */
+.clients {
+  height: 80vh;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 80px 0;
+  background-image: url(images/client-bkgnd.jpg);
+  background-position: top;
+  background-size: cover;
+  font-weight: 800;
+  font-size: 20px;
+}
+.clients-columns {
+  display: flex;
+  align-items: center;
+}
+.clients-column {
+  width: 330px;
+  margin: 20px;
+}
+.clients-column h1 {
+  font-size: 20px;
+}
+.clients-column p {
+  font-size: 16px;
+  font-weight: 200;
+}
+.clients-column h2 {
+  font-size: 18px;
+}
+.clients-column img {
+  margin: 10px;
+}
+
+@media(max-width: 700px) {
+  .clients-columns{
+    flex-direction: column;
+  }
+  .clients{
+    padding-top: 30px;
+    height:160vh;
+  }
+  .clients-column img {
+    margin: 0;
+  }
+}
+
+/* ---About Me--- */
+.aboutme {
+  height: 80vh;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 80px 0;
+  font-size: 18px;
+}
+.aboutme-columns {
+  display: flex;
+}
+.aboutme-column1 {
+  width: 50%;
+  margin: 60px;
+  align-items: center;
+}
+.hotlinks i{
+  color: #368fb3;
+  margin: 15px;
+}
+.hotlinks i:hover{
+  transform: scale(1.5);
+}
+
+
+@media(max-width: 700px) {
+  .aboutme-columns{
+    flex-direction: column;
+  }
+  .aboutme{
+    padding-top: 30px;
+    height:160vh;
+    width: 140%;
+  }
+  .aboutme-column2 img {
+    width:min-content;
+  }
+  .hotlinks i:hover{
+    transform: scale(1.5);
+  }
+}

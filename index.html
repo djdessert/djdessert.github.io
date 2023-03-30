@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angela Taylor LLC - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+  <script src="https://kit.fontawesome.com/4d0bc0c2b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html" class="logo-head"><img src="images/banner.png" width="300"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <!-- <li><a href="">HOME</a></li> -->
+          <li><a href="#about-me">ABOUT</a></li>
+          <li><a href="https://github.com/djdessert?tab=repositories">PORTFOLIO</a></li>
+          <!-- <li><a href="">BLOG</a></li> -->
+          <li><a href="mailto:hello@angelataylorllc.com">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Solidity, Sustainability & ReFI.</h1>
+      <br>
+      <p>Angela Taylor LLC focuses on the development of websites, Android apps, and BlockChain dApps.
+        Message us to see how we can help you and your company benefit from decentralized apps and new technologies.</p>
+      <br><br>
+      <a href="" class="hero-btn">Contact us to know more</a>
+    </div>
+  </section>
+
+  <!-- ----services---- -->
+  <section class="services">
+    <div class="columns">
+
+      <!-- --column 1-- -->
+      <div class="column">
+        <div class="service-box">
+          <h3>Smart Contract Developer</h3><br>
+          <p>Development and maintainance of self-executable contracts in a blockchain environment.</p>
+        </div>
+      </div>
+
+      <!-- --column 2-- -->
+      <div class="column">
+        <div class="service-box"><br>
+          <h3>Android Developer</h3><br>
+          <p>Software and applications for Android devices and the Google Play Store.</p>
+        </div>
+      </div>
+
+      <!-- --column 3-- -->
+      <div class="column">
+        <div class="service-box"><br>
+          <h3>React Developer</h3><br>
+          <p>JavaScript-based applications for web or mobile environments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---NFT--- -->
+  <section class="NFT">
+    <div class="NFT-text-box">
+      <h1>Looking for a developer to create NFT tools trusted by the world's largest NFT collection creators?</h1>
+      <br><img src="/images/NFT.png" width="600"><br><br>
+      <a href="mailto:hello@angelataylorllc.com">Message us now!</a>
+    </div>
+  </section>
+
+  <!-- ---Clients--- -->
+  <section class="clients">
+    <h1>Clients</h1><br><br>
+    <div class="clients-columns">
+
+      <!-- ---client 1--- -->
+      <div class="clients-column">
+        <a href="https://www.thelittleurbanfarm.org/">
+          <img src=" images/little-urban-farm.webp" height="110"></a><br><br>
+        <h1>THE LITTLE URBAN FARM</h1>
+        <br>
+        <p>The Little Urban Farm is creating a QR code for people to share the
+          progress of their garden development. This will be used for teachers and
+          schools to guide students on learning science.</p>
+        <br>
+        <h2>Launch date: May 2023</h2>
+      </div>
+
+      <!-- ---client 2--- -->
+      <div class="clients-column">
+        <a href="https://www.abletoshare.org/">
+          <img src="images/able.webp" height="70"></a>
+        <br><br><br>
+        <h1>ABLE TO REGENERATE CO. LTD</h1>
+        <br>
+        <p>Able to Regenerate CO., LTD is a company based in Thailand that is
+          creating a greenhouse crypto project where the liquidity comes from the
+          harvest of the produce.</p>
+        <br>
+        <h2>Launch date: November 2023</h2>
+      </div>
+
+      <!-- ---client 3--- -->
+      <div class="clients-column">
+        <a href="https://www.magical-u.com/">
+          <img src="images/magicalU.webp" height="110"></a><br>
+        <h1>MAGICAL U</h1>
+        <br>
+        <p>Magical U is a game that builds emotional intelligence.
+          Now, people can donate NFTs for Magical U to support emotional
+          intelligence development in NGO's and orphanages.</p>
+        <br>
+        <h2>Launch date: August 2023</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---About Me --- -->
+
+  <section class="aboutme">
+    <div class="aboutme-columns">
+      <div class="aboutme-column1">
+        <a id="about-me">
+          <h1>Hello, I am Angela Taylor</h1>
+        </a><br>
+        <p>I am a software developer for mobile and web-based applications.
+          I specialize in Blockchain, Android, and front-end development.
+          In my most recent previous position I worked as an avionics test and integration
+          engineer at Spaceflight, Inc.</p><br>
+        <div class="hotlinks">
+          <a href="https://github.com/djdessert?tab=repositories">
+            <i class="fa-brands fa-github fa-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/angela-taylor-78430538/">
+            <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        </div>
+      </div>
+      <div class="aboutme-column2">
+        <img src="/images/aboutmepic.webp" width="400">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- -----JavaScript for Toggle Menu----- -->
+  <script>
+    let navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
