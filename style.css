@@ -243,6 +243,9 @@ h3 {
     padding-left: 15px;
     height: 40vh;
   }
+  .NFT img {
+    width: 330px;
+  }
   .NFT-text-box {
     padding-left: 0;
     width: 350px;
